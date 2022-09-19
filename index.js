@@ -40,7 +40,7 @@ app.post("/posts",checkAuth,postCreateValidation,handelValidationErrors,postCont
 app.patch("/posts/:id",checkAuth,postCreateValidation,handelValidationErrors,postController.update)
 app.delete("/posts/:id",checkAuth,postController.remove)
 
-app.listen(process.env.PORT || 4444,(err)=>{
+app.listen(process.env.PORT|| 4444,(err)=>{
     if(err){
         console.log(err)
     }
